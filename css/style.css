@@ -1,0 +1,20 @@
+body{
+  background-color: #f0f0f0;
+}
+
+.admin-body {
+  background-image: url("../img/bg.png");
+  background-repeat: repeat;
+}
+.wrap-text {
+  word-wrap: break-word;
+  max-width: 200px; /* Adjust the maximum width as needed */
+}
+
+.footer {
+  background-color: #6c757d;
+}
+
+.bg-white{
+  background-color: #6c757d;
+}

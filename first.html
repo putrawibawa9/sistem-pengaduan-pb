@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clickable Box</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+        .clickable-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            padding: 20px;
+            border: 2px solid #000;
+            cursor: pointer;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .clickable-box img {
+            width: 100px;
+            margin-bottom: 10px;
+        }
+        .button-container {
+            display: flex;
+            gap: 10px; /* Add space between buttons */
+            margin-top: 10px;
+        }
+        .clickable-box .button {
+            display: inline-block;
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #ccc;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+            color: #000;
+        }
+        .clickable-box .button:hover {
+            background-color: #bbb; /* Change color on hover */
+        }
+    </style>
+</head>
+<body>
+
+<div class="clickable-box">
+    <img src="img/logoPb.jpg" alt="Logo Hanoman">
+    <div>Selamat Datang!<br>Jika ada Fasilitas Sarana yang Mengalami Kerusakan Segera lapor</div>
+    <div class="button-container">
+        <a href="pengaduan/pengaduan-tambah.php" class="button">FORM</a>
+        <a href="index.php" class="button">ADMIN</a>
+    </div>
+</div>
+</body>
+</html>
